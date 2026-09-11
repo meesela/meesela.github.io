@@ -1,3 +1,6 @@
+/* ==========================================
+   RESET & THEMA
+   ========================================== */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -13,7 +16,9 @@ html, body {
   line-height: 1.6;
 }
 
-/* HEADER */
+/* ==========================================
+   HEADER
+   ========================================== */
 header {
   background: rgba(18, 12, 34, 0.95);
   border-bottom: 2px solid #ff007f;
@@ -42,7 +47,7 @@ header {
   display: none;
 }
 
-/* 2-STREEP SCHAKELAAR */
+/* 2-STREEP KNOP RECHTS */
 .menu-btn {
   display: flex;
   flex-direction: column;
@@ -62,12 +67,14 @@ header {
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-/* SIDEBAR RECHTS (VERBORGEN TOT ERGEKLIKT WORDT) */
+/* ==========================================
+   SIDEBAR (PAS ZICHTBAAR BIJ KLIKKEN - 25% BREEDTE)
+   ========================================== */
 .sidebar {
   position: fixed;
   top: 0;
   right: 0;
-  width: 25vw;
+  width: 25vw;            /* Exact 1/4 van het scherm */
   min-width: 260px;
   height: 100vh;
   background-color: #120b22;
@@ -75,6 +82,8 @@ header {
   padding: 80px 25px 30px 25px;
   z-index: 101;
   box-shadow: -10px 0 30px rgba(0, 0, 0, 0.8);
+  
+  /* Buiten het scherm geschoven */
   transform: translateX(100%);
   transition: transform 0.3s ease-in-out;
 }
@@ -92,6 +101,7 @@ header {
   z-index: 99;
 }
 
+/* MENU SLIDES IN WANNEER OP KNOP WORDT GEKLIKT */
 #menu-toggle:checked ~ .sidebar {
   transform: translateX(0);
 }
@@ -101,6 +111,7 @@ header {
   visibility: visible;
 }
 
+/* ANIMATIE VAN DE 2 STREEPJES NAAR EEN KRUISJE */
 #menu-toggle:checked ~ .menu-btn span:nth-child(1) {
   transform: translateY(5.5px) rotate(45deg);
 }
@@ -109,7 +120,7 @@ header {
   transform: translateY(-5.5px) rotate(-45deg);
 }
 
-/* MENU CATEGORIEËN */
+/* MENU INHOUD */
 .menu-group {
   margin-bottom: 30px;
 }
@@ -156,7 +167,9 @@ header {
   padding-left: 14px;
 }
 
-/* PAGINA INHOUD */
+/* ==========================================
+   PAGINA INHOUD
+   ========================================== */
 main {
   max-width: 1000px;
   margin: 40px auto;
@@ -167,7 +180,7 @@ main {
   background: linear-gradient(135deg, rgba(255, 0, 127, 0.2), rgba(0, 240, 255, 0.2)), #160f2b;
   border: 1px solid #ff007f;
   border-radius: 12px;
-  padding: 40px 20px;
+  padding: 30px;
   text-align: center;
   margin-bottom: 30px;
 }
@@ -175,8 +188,20 @@ main {
 .hero h1 {
   font-size: 34px;
   color: #ffffff;
+  margin-bottom: 20px;
 }
 
+/* GTA 6 BANNER AFBEELDING */
+.hero-image {
+  width: 100%;
+  max-height: 420px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid #00f0ff;
+  box-shadow: 0 0 20px rgba(0, 240, 255, 0.4);
+}
+
+/* OVER MIJ BOX */
 .about-box {
   background: #140d26;
   border: 1px solid #281947;
@@ -211,6 +236,7 @@ main {
   border: 1px solid #2a1a4f;
 }
 
+/* MOBIEL SCHERM */
 @media (max-width: 768px) {
   .sidebar { width: 75vw; }
 }
