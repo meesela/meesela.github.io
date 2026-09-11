@@ -25,11 +25,11 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 15px 30px;
-  position: fixed; /* Blijft vast staan op het scherm */
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1000; /* Zorgt dat het overal bovenop zweeft */
+  z-index: 1000;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
 }
 
@@ -70,13 +70,13 @@ header {
 }
 
 /* ==========================================
-   SIDEBAR MENU (VAST AAN DE RECHTERKANT)
+   SIDEBAR MENU
    ========================================== */
 .sidebar {
   position: fixed;
   top: 0;
   right: 0;
-  width: 25vw;            /* 1/4 van het scherm */
+  width: 25vw;
   min-width: 260px;
   height: 100vh;
   background-color: #120b22;
@@ -84,8 +84,6 @@ header {
   padding: 80px 25px 30px 25px;
   z-index: 1001;
   box-shadow: -10px 0 30px rgba(0, 0, 0, 0.8);
-  
-  /* Buiten het scherm geschoven */
   transform: translateX(100%);
   transition: transform 0.3s ease-in-out;
 }
@@ -103,7 +101,6 @@ header {
   z-index: 999;
 }
 
-/* MENU SLIDES IN WANNEER OP KNOP WORDT GEKLIKT */
 #menu-toggle:checked ~ .sidebar {
   transform: translateX(0);
 }
@@ -113,7 +110,6 @@ header {
   visibility: visible;
 }
 
-/* ANIMATIE VAN DE 2 STREEPJES NAAR EEN KRUISJE */
 #menu-toggle:checked ~ .menu-btn span:nth-child(1) {
   transform: translateY(5.5px) rotate(45deg);
 }
@@ -122,7 +118,6 @@ header {
   transform: translateY(-5.5px) rotate(-45deg);
 }
 
-/* MENU INHOUD */
 .menu-group {
   margin-bottom: 30px;
 }
@@ -174,7 +169,7 @@ header {
    ========================================== */
 main {
   max-width: 1000px;
-  margin: 100px auto 40px auto; /* Extra ruimte aan de bovenkant vanwege de vaste header */
+  margin: 100px auto 40px auto;
   padding: 0 20px;
 }
 
@@ -193,7 +188,6 @@ main {
   margin-bottom: 20px;
 }
 
-/* GTA 6 BANNER AFBEELDING */
 .hero-image {
   width: 100%;
   max-height: 420px;
@@ -209,6 +203,7 @@ main {
   border: 1px solid #281947;
   border-radius: 12px;
   padding: 30px;
+  margin-bottom: 30px;
 }
 
 .about-text h2 {
@@ -236,6 +231,48 @@ main {
   font-size: 13px;
   font-weight: bold;
   border: 1px solid #2a1a4f;
+}
+
+/* CONTACT BOX */
+.contact-box {
+  background: #140d26;
+  border: 1px solid #281947;
+  border-radius: 12px;
+  padding: 30px;
+}
+
+.contact-box h2 {
+  color: #00f0ff;
+  margin-bottom: 15px;
+}
+
+.contact-box p {
+  color: #d1c9e8;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-item {
+  background: #20133d;
+  padding: 12px 18px;
+  border-radius: 8px;
+  border: 1px solid #2a1a4f;
+  color: #e6e1f5;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+}
+
+.contact-val {
+  color: #ff007f;
+  font-weight: bold;
 }
 
 /* MOBIEL SCHERM */
