@@ -9,7 +9,6 @@
 
 html, body {
   width: 100%;
-  overflow-x: hidden;
   background-color: #0a0714;
   color: #e6e1f5;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -17,18 +16,21 @@ html, body {
 }
 
 /* ==========================================
-   HEADER
+   HEADER (BLIJFT VASTPAGINA STAAN BIJ SCROLLEN)
    ========================================== */
 header {
-  background: rgba(18, 12, 34, 0.95);
+  background: rgba(18, 12, 34, 0.98);
   border-bottom: 2px solid #ff007f;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px 30px;
-  position: sticky;
+  position: fixed; /* Blijft vast staan op het scherm */
   top: 0;
-  z-index: 100;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Zorgt dat het overal bovenop zweeft */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
 }
 
 .logo {
@@ -55,7 +57,7 @@ header {
   width: 28px;
   height: 14px;
   cursor: pointer;
-  z-index: 102;
+  z-index: 1002;
 }
 
 .menu-btn span {
@@ -68,19 +70,19 @@ header {
 }
 
 /* ==========================================
-   SIDEBAR (PAS ZICHTBAAR BIJ KLIKKEN - 25% BREEDTE)
+   SIDEBAR MENU (VAST AAN DE RECHTERKANT)
    ========================================== */
 .sidebar {
   position: fixed;
   top: 0;
   right: 0;
-  width: 25vw;            /* Exact 1/4 van het scherm */
+  width: 25vw;            /* 1/4 van het scherm */
   min-width: 260px;
   height: 100vh;
   background-color: #120b22;
   border-left: 2px solid #ff007f;
   padding: 80px 25px 30px 25px;
-  z-index: 101;
+  z-index: 1001;
   box-shadow: -10px 0 30px rgba(0, 0, 0, 0.8);
   
   /* Buiten het scherm geschoven */
@@ -98,7 +100,7 @@ header {
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease, visibility 0.3s ease;
-  z-index: 99;
+  z-index: 999;
 }
 
 /* MENU SLIDES IN WANNEER OP KNOP WORDT GEKLIKT */
@@ -172,7 +174,7 @@ header {
    ========================================== */
 main {
   max-width: 1000px;
-  margin: 40px auto;
+  margin: 100px auto 40px auto; /* Extra ruimte aan de bovenkant vanwege de vaste header */
   padding: 0 20px;
 }
 
