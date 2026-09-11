@@ -3,92 +3,109 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mijn Website - GTA 6 & Informatica</title>
+  <title>Home - Mees | GTA 6 & Informatica</title>
   <link rel="stylesheet" href="stijl.css">
 </head>
 <body>
 
-  <!-- NAVIGATIEBAR MET DUIDELIJKE HOOFDMENU'S -->
+  <!-- HEADER MET LOGO EN 2-STREEP KNOP -->
   <header>
-    <div class="navbar">
-      <a href="index.html" class="logo">🎮 MY WEBSITE</a>
+    <a href="index.html" class="logo">🌴 MEES.IO</a>
+    
+    <!-- Verborgen Checkbox voor Menu Schakelaar -->
+    <input type="checkbox" id="menu-toggle">
+    
+    <!-- 2-Streep Icoon -->
+    <label for="menu-toggle" class="menu-btn">
+      <span></span>
+      <span></span>
+    </label>
 
-      <nav>
-        <ul class="nav-links">
-          
-          <li class="nav-item">
-            <a href="index.html" class="nav-link actief">Home</a>
-          </li>
-
-          <!-- HOOFDMENU 1: GTA 6 -->
-          <li class="nav-item">
-            <span class="dropbtn">🌴 GTA 6 ▼</span>
-            <div class="dropdown-menu">
-              <a href="gta6-verhaal.html">Verhaal & Vice City</a>
-              <a href="gta6-personages.html">Personages (Lucia & Jason)</a>
-              <a href="gta6-gameplay.html">Gameplay & Details</a>
-              <a href="gta6-trailers.html">Trailers & Geruchten</a>
-            </div>
-          </li>
-
-          <!-- HOOFDMENU 2: INFORMATICA -->
-          <li class="nav-item">
-            <span class="dropbtn">💻 Informatica ▼</span>
-            <div class="dropdown-menu">
-              <a href="binairstelsel.html">Binair Stelsel</a>
-              <a href="kleurmodellen.html">Kleurmodellen</a>
-              <a href="drielagenmodel.html">3-Lagenmodel</a>
-              <a href="cpu.html">CPU (Processor)</a>
-            </div>
-          </li>
-
+    <!-- SIDEBAR MENU (1/4 SCHERMBREEDTE) -->
+    <nav class="sidebar">
+      
+      <!-- GTA 6 ONDERWERPEN (BOVENAAN) -->
+      <div class="menu-category gta-cat">
+        <h3>🌴 GTA 6</h3>
+        <ul>
+          <li><a href="gta6-verhaal.html">Verhaal & Vice City</a></li>
+          <li><a href="gta6-personages.html">Personages (Lucia & Jason)</a></li>
+          <li><a href="gta6-gameplay.html">Gameplay & Voertuigen</a></li>
+          <li><a href="gta6-trailers.html">Trailers & Geruchten</a></li>
         </ul>
-      </nav>
-    </div>
+      </div>
+
+      <!-- INFORMATICA ONDERWERPEN (ONDERAN) -->
+      <div class="menu-category info-cat">
+        <h3>💻 Informatica</h3>
+        <ul>
+          <li><a href="binairstelsel.html">Binair Stelsel</a></li>
+          <li><a href="kleurmodellen.html">Kleurmodellen</a></li>
+          <li><a href="drielagenmodel.html">3-Lagenmodel</a></li>
+          <li><a href="cpu.html">CPU (Processor)</a></li>
+        </ul>
+      </div>
+
+    </nav>
   </header>
 
   <main>
-    <!-- WELKOMST BANNER -->
+    <!-- HERO BANNER -->
     <section class="hero">
-      <h1>Welkom op mijn Portfoliosoite!</h1>
-      <p>Beweeg je muis over het menu bovenaan om alle onderwerpen over <strong>GTA 6</strong> en <strong>Informatica</strong> te ontdekken.</p>
+      <h1>Welkom op mijn Website!</h1>
+      <p>Klik rechtsboven op de 2 streepjes om direct naar alle GTA 6 en Informatica pagina's te navigeren.</p>
     </section>
 
-    <!-- OVER MIJ SECTIE -->
-    <h2>Wie ben ik?</h2>
-    <div class="card">
-      <p>Hallo! Ik ben <strong>[Jouw Naam]</strong>. Op deze website combineer ik mijn schoolopdrachten voor het vak Informatica met het nieuwste nieuws over GTA 6.</p>
-    </div>
+    <!-- UITGEBREID OVER MIJ GEDEELTE -->
+    <section class="about-card">
+      <div class="about-grid">
+        <!-- Jouw Foto -->
+        <img src="mijzelf.jpg" alt="Foto van Mees" class="profile-img">
+        
+        <!-- Jouw Informatie -->
+        <div class="about-details">
+          <h2>Over Mijzelf</h2>
+          <p>
+            Hallo! Ik ben <strong>Mees</strong>. Welkom op mijn persoonlijke website! Ik zit in de klas op school waar ik het vak Informatica volg. 
+            Naast school ben ik een enorme fan van gaming, met name de <em>Grand Theft Auto</em> serie. Ik kijk ontzettend uit naar de release van <strong>GTA 6</strong> in Vice City.
+          </p>
+          <p>
+            Op deze website vind je zowel mijn schoolopdrachten voor Informatica als de nieuwste updates, personages en feiten over GTA 6!
+          </p>
 
-    <!-- SNELKOPPELINGEN CATEGORIEËN -->
-    <h2>Verken GTA 6</h2>
-    <div class="grid-container">
-      <a href="gta6-verhaal.html" class="grid-card">
-        <h3>🌴 Vice City</h3>
-        <p>Lees alles over de gloednieuwe map van GTA 6.</p>
-      </a>
-      <a href="gta6-personages.html" class="grid-card">
-        <h3>👥 Lucia & Jason</h3>
-        <p>Maak kennis met het eerste hoofdduo uit de game.</p>
-      </a>
-    </div>
+          <!-- Informatie Tags -->
+          <div class="info-tags">
+            <span class="tag">👤 Naam: Mees</span>
+            <span class="tag">🎮 Favoriete Game: GTA 6</span>
+            <span class="tag">💻 Vak: Informatica</span>
+            <span class="tag">📍 Locatie: Vice City Fan</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <h2>Verken Informatica</h2>
-    <div class="grid-container">
-      <a href="binairstelsel.html" class="grid-card">
-        <h3>🔢 Binair Stelsel</h3>
-        <p>Hoe rekenen computers met 1en en 0en?</p>
-      </a>
-      <a href="cpu.html" class="grid-card">
-        <h3>⚙️ De CPU</h3>
-        <p>Ontdek de werking van de computerprocessor.</p>
-      </a>
+    <!-- GTA 6 VISUELE CARDS -->
+    <h2 class="gta-section-title">GTA 6 Outfits & Vice City</h2>
+    <div class="card-grid">
+      
+      <div class="card">
+        <img src="gta6-vicecity.jpg" alt="Vice City Banner">
+        <div class="card-body">
+          <h3>Vice City Map</h3>
+          <p>De iconische neonstad keert terug, groter en gedetailleerder dan ooit tevoren.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="gta6-lucia.jpg" alt="Lucia en Jason">
+        <div class="card-body">
+          <h3>Lucia & Jason</h3>
+          <p>Het nieuwe duo dat de hoofdrol speelt in het avontuur van GTA 6.</p>
+        </div>
+      </div>
+
     </div>
   </main>
-
-  <footer>
-    <p>&copy; 2026 Gemaakt door [Jouw Naam]</p>
-  </footer>
 
 </body>
 </html>
