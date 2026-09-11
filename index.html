@@ -3,97 +3,87 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home - Over Mij, GTA 5 & Informatica</title>
+  <title>Mijn Website - GTA 6 & Informatica</title>
   <link rel="stylesheet" href="stijl.css">
 </head>
 <body>
 
-  <!-- GEORDEND NAVIGATIEMENU -->
-  <nav>
-    <ul>
-      <li><a href="index.html" class="actief">Home / Over Mij</a></li>
+  <!-- NAVIGATIEBAR MET DUIDELIJKE HOOFDMENU'S -->
+  <header>
+    <div class="navbar">
+      <a href="index.html" class="logo">🎮 MY WEBSITE</a>
 
-      <!-- GROEP 1: GTA 5 -->
-      <li class="dropdown">
-        <span class="dropbtn">🎮 GTA 5 ▼</span>
-        <div class="dropdown-content">
-          <a href="feiten.html">GTA Feiten</a>
-          <a href="missies.html">GTA Missies</a>
-          <a href="wapens.html">GTA Wapens</a>
-          <a href="skins.html">GTA Skins</a>
-        </div>
-      </li>
+      <nav>
+        <ul class="nav-links">
+          
+          <li class="nav-item">
+            <a href="index.html" class="nav-link actief">Home</a>
+          </li>
 
-      <!-- GROEP 2: INFORMATICA -->
-      <li class="dropdown">
-        <span class="dropbtn">💻 Informatica ▼</span>
-        <div class="dropdown-content">
-          <a href="binairstelsel.html">Binair Stelsel</a>
-          <a href="kleurmodellen.html">Kleurmodellen</a>
-          <a href="drielagenmodel.html">3-Lagenmodel</a>
-          <a href="cpu.html">CPU</a>
-        </div>
-      </li>
-    </ul>
-  </nav>
+          <!-- HOOFDMENU 1: GTA 6 -->
+          <li class="nav-item">
+            <span class="dropbtn">🌴 GTA 6 ▼</span>
+            <div class="dropdown-menu">
+              <a href="gta6-verhaal.html">Verhaal & Vice City</a>
+              <a href="gta6-personages.html">Personages (Lucia & Jason)</a>
+              <a href="gta6-gameplay.html">Gameplay & Details</a>
+              <a href="gta6-trailers.html">Trailers & Geruchten</a>
+            </div>
+          </li>
 
-  <!-- HOOFDINHOUD -->
+          <!-- HOOFDMENU 2: INFORMATICA -->
+          <li class="nav-item">
+            <span class="dropbtn">💻 Informatica ▼</span>
+            <div class="dropdown-menu">
+              <a href="binairstelsel.html">Binair Stelsel</a>
+              <a href="kleurmodellen.html">Kleurmodellen</a>
+              <a href="drielagenmodel.html">3-Lagenmodel</a>
+              <a href="cpu.html">CPU (Processor)</a>
+            </div>
+          </li>
+
+        </ul>
+      </nav>
+    </div>
+  </header>
+
   <main>
-
-    <!-- WELKOMSTBANNER -->
+    <!-- WELKOMST BANNER -->
     <section class="hero">
-      <h1>Welkom op mijn Website!</h1>
-      <p>Hier vind je alles over mijzelf, mijn opdrachten voor Informatica én al mijn favoriete onderwerpen over GTA 5.</p>
+      <h1>Welkom op mijn Portfoliosoite!</h1>
+      <p>Beweeg je muis over het menu bovenaan om alle onderwerpen over <strong>GTA 6</strong> en <strong>Informatica</strong> te ontdekken.</p>
     </section>
 
-    <!-- OVER MIJ -->
+    <!-- OVER MIJ SECTIE -->
     <h2>Wie ben ik?</h2>
     <div class="card">
-      <p>Hallo! Ik ben <strong>[Jouw Naam]</strong>. Op deze website combineer ik mijn informatica-opdrachten met mijn passie voor gamen (GTA 5). Gebruik het menu bovenaan om snel door alle onderwerpen te navigeren!</p>
-      <img src="mijzelf.jpg" alt="Foto van mijzelf">
+      <p>Hallo! Ik ben <strong>[Jouw Naam]</strong>. Op deze website combineer ik mijn schoolopdrachten voor het vak Informatica met het nieuwste nieuws over GTA 6.</p>
     </div>
 
-    <!-- ONDERWERPEN CATEGORIEËN -->
-    <h2>Snel naar Informatica</h2>
+    <!-- SNELKOPPELINGEN CATEGORIEËN -->
+    <h2>Verken GTA 6</h2>
+    <div class="grid-container">
+      <a href="gta6-verhaal.html" class="grid-card">
+        <h3>🌴 Vice City</h3>
+        <p>Lees alles over de gloednieuwe map van GTA 6.</p>
+      </a>
+      <a href="gta6-personages.html" class="grid-card">
+        <h3>👥 Lucia & Jason</h3>
+        <p>Maak kennis met het eerste hoofdduo uit de game.</p>
+      </a>
+    </div>
+
+    <h2>Verken Informatica</h2>
     <div class="grid-container">
       <a href="binairstelsel.html" class="grid-card">
         <h3>🔢 Binair Stelsel</h3>
-        <p>Uitleg over nullen en enen in computers.</p>
-      </a>
-      <a href="kleurmodellen.html" class="grid-card">
-        <h3>🎨 Kleurmodellen</h3>
-        <p>Hoe werken RGB en kleuren op schermen?</p>
-      </a>
-      <a href="drielagenmodel.html" class="grid-card">
-        <h3>🏗️ 3-Lagenmodel</h3>
-        <p>Inzicht in de structuur van een computersysteem.</p>
+        <p>Hoe rekenen computers met 1en en 0en?</p>
       </a>
       <a href="cpu.html" class="grid-card">
-        <h3>⚙️ CPU</h3>
-        <p>Hoe werkt de processor (het brein) van de computer?</p>
+        <h3>⚙️ De CPU</h3>
+        <p>Ontdek de werking van de computerprocessor.</p>
       </a>
     </div>
-
-    <h2>Snel naar GTA 5</h2>
-    <div class="grid-container">
-      <a href="feiten.html" class="grid-card">
-        <h3>💡 Feiten</h3>
-        <p>Coole weetjes over de game.</p>
-      </a>
-      <a href="missies.html" class="grid-card">
-        <h3>🎯 Missies</h3>
-        <p>De vetste overvallen en heists.</p>
-      </a>
-      <a href="wapens.html" class="grid-card">
-        <h3>🔫 Wapens</h3>
-        <p>De sterkste wapens in Los Santos.</p>
-      </a>
-      <a href="skins.html" class="grid-card">
-        <h3>👔 Skins</h3>
-        <p>Outfits en personages.</p>
-      </a>
-    </div>
-
   </main>
 
   <footer>
