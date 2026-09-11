@@ -3,33 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mees | GTA 6 & Informatica Portfolio</title>
+  <title>Mees | GTA 6 & Informatica</title>
   <link rel="stylesheet" href="stijl.css">
 </head>
 <body>
 
-  <!-- HEADER MET LOGO EN 2-STREEP SCHAKELAAR -->
+  <!-- HEADER -->
   <header>
-    <a href="index.html" class="logo">MEES<span class="highlight">.IO</span></a>
-    
+    <a href="index.html" class="logo">MEES<span>.IO</span></a>
+
+    <!-- CHECKBOX & SCHAKELAAR -->
     <input type="checkbox" id="menu-toggle">
+    
     <label for="menu-toggle" class="menu-btn" title="Open Menu">
       <span></span>
       <span></span>
     </label>
 
-    <!-- DONKERE OVERLAY WANNEER MENU OPEN IS -->
     <label for="menu-toggle" class="overlay"></label>
 
-    <!-- SIDEBAR MENU (25% SCHERMBREEDTE) -->
+    <!-- SIDEBAR (SLIDES IN VANAF RECHTS) -->
     <nav class="sidebar">
-      <div class="sidebar-header">
-        <h2>NAVIGATIE</h2>
-      </div>
-
-      <!-- CATEGORIE 1: GTA 6 (BOVENAAN) -->
+      
+      <!-- BOVENAAN: GTA 6 -->
       <div class="menu-group gta-group">
-        <span class="group-title">🌴 GTA 6</span>
+        <h3>🌴 GTA 6</h3>
         <ul>
           <li><a href="gta6-verhaal.html">Verhaal & Vice City</a></li>
           <li><a href="gta6-personages.html">Personages (Lucia & Jason)</a></li>
@@ -38,9 +36,9 @@
         </ul>
       </div>
 
-      <!-- CATEGORIE 2: INFORMATICA (ONDERAN) -->
+      <!-- ONDERAAN: INFORMATICA -->
       <div class="menu-group info-group">
-        <span class="group-title">💻 INFORMATICA</span>
+        <h3>💻 Informatica</h3>
         <ul>
           <li><a href="binairstelsel.html">Binair Stelsel</a></li>
           <li><a href="kleurmodellen.html">Kleurmodellen</a></li>
@@ -48,94 +46,31 @@
           <li><a href="cpu.html">CPU (Processor)</a></li>
         </ul>
       </div>
+
     </nav>
   </header>
 
   <main>
-    <!-- HERO HEADER -->
     <section class="hero">
-      <div class="hero-content">
-        <span class="badge">Portfolio 2026</span>
-        <h1>Welkom op mijn Website</h1>
-        <p>Klik op de 2 streepjes rechtsboven om alle onderwerpen over <strong>GTA 6</strong> en <strong>Informatica</strong> te openen.</p>
-      </div>
+      <h1>Welkom op mijn Portfolio</h1>
+      <p>Klik rechtsboven op de 2 streepjes om het menu te openen.</p>
     </section>
 
-    <!-- UITGEBREID OVER MIJ GEDEELTE -->
-    <section class="about-section">
-      <div class="about-card">
-        <div class="about-image-wrapper">
-          <img src="mijzelf.jpg" alt="Foto van Mees" class="profile-img">
-          <div class="online-status">Online</div>
+    <!-- OVER MIJ -->
+    <section class="about-box">
+      <img src="mijzelf.jpg" alt="Foto van Mees" class="profile-pic">
+      <div class="about-text">
+        <h2>Over Mijzelf</h2>
+        <p>Hallo! Ik ben <strong>Mees</strong>. Op deze website combineer ik mijn informatica-opdrachten voor school met alle updates rondom GTA 6.</p>
+        
+        <div class="about-details">
+          <span class="badge">👤 Naam: Mees</span>
+          <span class="badge">💻 Vak: Informatica</span>
+          <span class="badge">🎮 Game: GTA 6</span>
         </div>
-
-        <div class="about-info">
-          <h2>Hallo, ik ben <span class="name-glow">Mees</span> 👋</h2>
-          <p class="bio">
-            Welkom op mijn portfolio! Ik ben een scholier met een grote passie voor technologie, programmeren en gaming. 
-            Voor het vak <strong>Informatica</strong> leer ik hoe computers op de achtergrond werken (zoals binaire codes en processors). 
-            In mijn vrije tijd volg ik alle nieuwtjes rondom de aanstaande release van <strong>GTA 6</strong> op de voet.
-          </p>
-
-          <!-- DETAILS GRID -->
-          <div class="details-grid">
-            <div class="detail-item">
-              <span class="label">Naam</span>
-              <span class="val">Mees</span>
-            </div>
-            <div class="detail-item">
-              <span class="label">Favoriete Game</span>
-              <span class="val">GTA 6 (Vice City)</span>
-            </div>
-            <div class="detail-item">
-              <span class="label">Schoolvak</span>
-              <span class="val">Informatica</span>
-            </div>
-            <div class="detail-item">
-              <span class="label">Project</span>
-              <span class="val">Web Development</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- GTA 6 VISUELE SHOWCASE -->
-    <section class="showcase">
-      <h2 class="section-title">GTA 6 Preview</h2>
-      <div class="card-grid">
-
-        <div class="gta-card">
-          <div class="card-img-container">
-            <img src="gta6-vicecity.jpg" alt="Vice City">
-            <span class="card-tag">Locatie</span>
-          </div>
-          <div class="card-content">
-            <h3>Vice City & Leonida</h3>
-            <p>De grootste en meest levendige GTA-wereld ooit gebouwd door Rockstar Games.</p>
-            <a href="gta6-verhaal.html" class="card-btn">Lees Meer →</a>
-          </div>
-        </div>
-
-        <div class="gta-card">
-          <div class="card-img-container">
-            <img src="gta6-lucia.jpg" alt="Lucia & Jason">
-            <span class="card-tag">Personages</span>
-          </div>
-          <div class="card-content">
-            <h3>Lucia & Jason</h3>
-            <p>Het eerste Bonnie & Clyde-achtige duo dat centraal staat in de storyline.</p>
-            <a href="gta6-personages.html" class="card-btn">Lees Meer →</a>
-          </div>
-        </div>
-
       </div>
     </section>
   </main>
-
-  <footer>
-    <p>&copy; 2026 Gemaakt door Mees &bull; GitHub Pages Website</p>
-  </footer>
 
 </body>
 </html>
