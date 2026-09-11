@@ -2,64 +2,103 @@
 <html lang="nl">
 <head>
   <meta charset="UTF-8">
-  <title>Home - Over Mij & GTA 5</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Over Mij, GTA 5 & Informatica</title>
   <link rel="stylesheet" href="stijl.css">
 </head>
 <body>
 
-  <!-- Navigatiemenu -->
+  <!-- GEORDEND NAVIGATIEMENU -->
   <nav>
     <ul>
-      <li><a href="index.html" class="actief">Home</a></li>
-      <li><a href="feiten.html">GTA Feiten</a></li>
-      <li><a href="missies.html">GTA Missies</a></li>
-      <li><a href="wapens.html">GTA Wapens</a></li>
-      <li><a href="skins.html">GTA Skins</a></li>
+      <li><a href="index.html" class="actief">Home / Over Mij</a></li>
+
+      <!-- GROEP 1: GTA 5 -->
+      <li class="dropdown">
+        <span class="dropbtn">🎮 GTA 5 ▼</span>
+        <div class="dropdown-content">
+          <a href="feiten.html">GTA Feiten</a>
+          <a href="missies.html">GTA Missies</a>
+          <a href="wapens.html">GTA Wapens</a>
+          <a href="skins.html">GTA Skins</a>
+        </div>
+      </li>
+
+      <!-- GROEP 2: INFORMATICA -->
+      <li class="dropdown">
+        <span class="dropbtn">💻 Informatica ▼</span>
+        <div class="dropdown-content">
+          <a href="binairstelsel.html">Binair Stelsel</a>
+          <a href="kleurmodellen.html">Kleurmodellen</a>
+          <a href="drielagenmodel.html">3-Lagenmodel</a>
+          <a href="cpu.html">CPU</a>
+        </div>
+      </li>
     </ul>
   </nav>
 
+  <!-- HOOFDINHOUD -->
   <main>
-    <!-- Stoere Hero Banner -->
+
+    <!-- WELKOMSTBANNER -->
     <section class="hero">
-      <h1>Welkom op mijn GTA 5 Website!</h1>
-      <p>Ontdek alles over mijzelf, vette GTA 5 feiten, de beste missies, krachtigste wapens en coolste skins.</p>
-      <a href="feiten.html" class="btn">Bekijk GTA Feiten</a>
+      <h1>Welkom op mijn Website!</h1>
+      <p>Hier vind je alles over mijzelf, mijn opdrachten voor Informatica én al mijn favoriete onderwerpen over GTA 5.</p>
     </section>
 
-    <!-- Over Mij Sectie -->
+    <!-- OVER MIJ -->
     <h2>Wie ben ik?</h2>
     <div class="card">
-      <p>Hallo! Ik ben <strong>[Jouw Naam]</strong>. Ik hou van gamen en mijn favoriete game is GTA 5. Ik heb deze website gebouwd om mijn passie voor de game te delen en om te laten zien wat je allemaal in Los Santos kunt beleven!</p>
-      <!-- Zorg dat je een afbeelding hebt geüpload genaamd mijzelf.jpg -->
+      <p>Hallo! Ik ben <strong>[Jouw Naam]</strong>. Op deze website combineer ik mijn informatica-opdrachten met mijn passie voor gamen (GTA 5). Gebruik het menu bovenaan om snel door alle onderwerpen te navigeren!</p>
       <img src="mijzelf.jpg" alt="Foto van mijzelf">
     </div>
 
-    <!-- Snelkoppelingen Grid naar de andere pagina's -->
-    <h2>Ontdek de Website</h2>
+    <!-- ONDERWERPEN CATEGORIEËN -->
+    <h2>Snel naar Informatica</h2>
     <div class="grid-container">
-      
+      <a href="binairstelsel.html" class="grid-card">
+        <h3>🔢 Binair Stelsel</h3>
+        <p>Uitleg over nullen en enen in computers.</p>
+      </a>
+      <a href="kleurmodellen.html" class="grid-card">
+        <h3>🎨 Kleurmodellen</h3>
+        <p>Hoe werken RGB en kleuren op schermen?</p>
+      </a>
+      <a href="drielagenmodel.html" class="grid-card">
+        <h3>🏗️ 3-Lagenmodel</h3>
+        <p>Inzicht in de structuur van een computersysteem.</p>
+      </a>
+      <a href="cpu.html" class="grid-card">
+        <h3>⚙️ CPU</h3>
+        <p>Hoe werkt de processor (het brein) van de computer?</p>
+      </a>
+    </div>
+
+    <h2>Snel naar GTA 5</h2>
+    <div class="grid-container">
       <a href="feiten.html" class="grid-card">
         <h3>💡 Feiten</h3>
-        <p>Lees de meest bijzondere weetjes over GTA 5.</p>
+        <p>Coole weetjes over de game.</p>
       </a>
-
       <a href="missies.html" class="grid-card">
         <h3>🎯 Missies</h3>
-        <p>Bekijk de vetste heists en verhaalmissies.</p>
+        <p>De vetste overvallen en heists.</p>
       </a>
-
       <a href="wapens.html" class="grid-card">
         <h3>🔫 Wapens</h3>
-        <p>Ontdek de sterkste wapens in de game.</p>
+        <p>De sterkste wapens in Los Santos.</p>
       </a>
-
       <a href="skins.html" class="grid-card">
         <h3>👔 Skins</h3>
-        <p>Alles over de personages en hun outfits.</p>
+        <p>Outfits en personages.</p>
       </a>
-
     </div>
+
   </main>
+
+  <footer>
+    <p>&copy; 2026 Gemaakt door [Jouw Naam]</p>
+  </footer>
 
 </body>
 </html>
