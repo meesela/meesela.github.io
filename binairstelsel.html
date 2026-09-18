@@ -11,13 +11,11 @@
   <!-- HEADER -->
   <header>
     <a href="index.html" class="logo">MEES<span>.IO</span></a>
-
     <input type="checkbox" id="menu-toggle">
     <label for="menu-toggle" class="menu-btn" title="Open Menu">
       <span></span>
       <span></span>
     </label>
-
     <label for="menu-toggle" class="overlay"></label>
 
     <!-- SIDEBAR MENU -->
@@ -45,28 +43,39 @@
   </header>
 
   <main>
-    <!-- HERO HEADER EN TERUGKNOP -->
+    <!-- HERO SECTIE MET FOTO, VIDEO EN TERUGKNOP -->
     <section class="hero">
       <h1>Het Binair Stelsel</h1>
       <p style="color: #00f0ff; font-weight: bold; margin-bottom: 15px;">
         [Typ 1 korte zin]
       </p>
       
-      <!-- KNOP TERUG NAAR HOOFDPAGINA -->
-      <a href="index.html" style="display: inline-block; background: #ff007f; color: #ffffff; padding: 10px 20px; border-radius: 20px; text-decoration: none; font-weight: bold; font-size: 14px;">
+      <a href="index.html" style="display: inline-block; background: #ff007f; color: #ffffff; padding: 10px 20px; border-radius: 20px; text-decoration: none; font-weight: bold; font-size: 14px; margin-bottom: 20px;">
         ⬅ Terug naar Hoofdpagina
       </a>
+
+      <!-- AFBEELDING -->
+      <img src="binair.jpg" alt="Binair Stelsel Afbeelding" class="hero-image" style="margin-bottom: 20px;">
+
+      <!-- YOUTUBE VIDEO -->
+      <div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 10px; border: 2px solid #00f0ff; box-shadow: 0 0 20px rgba(0, 240, 255, 0.4);">
+        <iframe 
+          src="https://www.youtube-nocookie.com/embed/zDnaXGeL_1U" 
+          title="Uitleg Binair Stelsel" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen
+          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+        </iframe>
+      </div>
     </section>
 
-    <!-- KORT EN OVERZICHTELIJK BLOK -->
+    <!-- INHOUD -->
     <section class="about-box">
       <div class="about-text">
         <h2>⚡ De Basis</h2>
-        <p>
-          [Typ hier 1 of 2 hele korte zinnen]
-        </p>
+        <p>[Typ hier 1 of 2 hele korte zinnen]</p>
 
-        <!-- SNELLE BADGES -->
         <div class="about-details" style="margin-bottom: 25px;">
           <span class="badge">💡 0 = Uit</span>
           <span class="badge">⚡ 1 = Aan</span>
@@ -91,7 +100,6 @@
             </div>
           </div>
         </div>
-
       </div>
     </section>
   </main>
