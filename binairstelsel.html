@@ -8,54 +8,65 @@
 </head>
 <body>
 
+  <!-- HEADER -->
   <header>
     <a href="index.html" class="logo">MEES<span>.IO</span></a>
+
+    <!-- CHECKBOX EN 2-STREEP KNOP -->
     <input type="checkbox" id="menu-toggle">
     <label for="menu-toggle" class="menu-btn" title="Open Menu">
       <span></span>
       <span></span>
     </label>
+
+    <!-- DONKERE ACHTERGROND WANNEER MENU OPEN IS -->
     <label for="menu-toggle" class="overlay"></label>
 
+    <!-- SIDEBAR MENU -->
     <nav class="sidebar">
+      
+      <!-- GTA 6 ONDERWERPEN -->
       <div class="menu-group gta-group">
         <h3>🌴 GTA 6</h3>
         <ul>
           <li><a href="gta6-verhaal.html">Verhaal & Vice City</a></li>
-          <li><a href="gta6-personages.html">Personages (Lucia & Jason)</a></li>
-          <li><a href="gta6-gameplay.html">Gameplay & Voertuigen</a></li>
-          <li><a href="gta6-trailers.html">Trailers & Geruchten</a></li>
         </ul>
       </div>
 
+      <!-- INFORMATICA ONDERWERPEN -->
       <div class="menu-group info-group">
         <h3>💻 Informatica</h3>
         <ul>
           <li><a href="binairstelsel.html">Binair Stelsel</a></li>
           <li><a href="kleurmodellen.html">Kleurmodellen</a></li>
-          <li><a href="drielagenmodel.html">3-Lagenmodel</a></li>
-          <li><a href="cpu.html">CPU (Processor)</a></li>
+          <li><a href="compressie.html">Compressie</a></li>
+          <li><a href="ai.html">AI (Kunstmatige Intelligentie)</a></li>
+          <li><a href="invoer-verwerking-uitvoer.html">Invoer, Verwerking & Uitvoer</a></li>
         </ul>
       </div>
+
     </nav>
   </header>
 
   <main>
+    <!-- HERO SECTIE -->
     <section class="hero">
       <h1>Het Binair Stelsel</h1>
       <p style="color: #00f0ff; font-weight: bold; margin-bottom: 15px;">
-        [Typ 1 korte zin]
+        De basis van alle computers: communiceren in enen en nullen.
       </p>
       
       <a href="index.html" style="display: inline-block; background: #ff007f; color: #ffffff; padding: 10px 20px; border-radius: 20px; text-decoration: none; font-weight: bold; font-size: 14px; margin-bottom: 20px;">
         ⬅ Terug naar Hoofdpagina
       </a>
 
-      <img src="binair.jpg" alt="Binair Stelsel Afbeelding" class="hero-image" style="margin-bottom: 20px;">
+      <!-- AFBEELDING -->
+      <img src="binair.jpg" alt="Binair Stelsel Afbeelding" class="hero-image" style="margin-bottom: 25px;">
 
+      <!-- YOUTUBE VIDEO -->
       <div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 10px; border: 2px solid #00f0ff; box-shadow: 0 0 20px rgba(0, 240, 255, 0.4);">
         <iframe 
-          src="https://www.youtube.com/embed/rrIe5wOip4k" 
+          src="https://www.youtube.com/embed/zDnaXGeL_1U" 
           title="Uitleg Binair Stelsel" 
           frameborder="0" 
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
@@ -65,23 +76,33 @@
       </div>
     </section>
 
+    <!-- INFORMATIE SECTIE -->
     <section class="about-box">
       <div class="about-text">
-        <h2>⚡ De Basis</h2>
-        <p>[Typ hier 1 of 2 hele korte zinnen]</p>
+        <h2>⚡ Hoe werkt het Binair Stelsel?</h2>
+        <p>
+          Computers begrijpen geen menselijke taal of gewone getallen zoals wij die kennen. 
+          Van binnen werken microprocessoren met piepkleine schakelaars: er staat spanning op (AAN) of niet (UIT). 
+          Daarom gebruiken computers het <strong>binaire stelsel</strong> (het tweetallig stelsel), dat alleen bestaat uit de getallen <strong>0</strong> en <strong>1</strong>.
+        </p>
 
         <div class="about-details" style="margin-bottom: 25px;">
-          <span class="badge">💡 0 = Uit</span>
-          <span class="badge">⚡ 1 = Aan</span>
+          <span class="badge">💡 0 = Uit (Geen stroom)</span>
+          <span class="badge">⚡ 1 = Aan (Wel stroom)</span>
           <span class="badge">📦 8 Bits = 1 Byte</span>
         </div>
 
-        <h2>🔢 Omrekenen</h2>
+        <h2>🔢 Omrekenen van Binair naar Decimaal</h2>
+        <p>
+          In het dagelijks leven gebruiken wij het decimale stelsel (10 getallen: 0 t/m 9). 
+          Bij binair heeft elke plek een waarde die steeds verdubbelt van rechts naar links:
+        </p>
+
         <div class="contact-details">
           <div class="contact-item">
             <span class="icon">📊</span>
             <div>
-              <strong>Bit-waarden:</strong><br>
+              <strong>Bit-waarden (van links naar rechts):</strong><br>
               <span class="contact-val">128 — 64 — 32 — 16 — 8 — 4 — 2 — 1</span>
             </div>
           </div>
@@ -89,8 +110,8 @@
           <div class="contact-item">
             <span class="icon">✏️</span>
             <div>
-              <strong>Voorbeeld:</strong><br>
-              <span class="contact-val">[Typ je korte voorbeeld]</span>
+              <strong>Voorbeeld: 00001010</strong><br>
+              <span class="contact-val">Er staat een 1 bij 8 en bij 2. Samen is dat: 8 + 2 = 10!</span>
             </div>
           </div>
         </div>
