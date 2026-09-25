@@ -8,55 +8,66 @@
 </head>
 <body>
 
+  <!-- HEADER -->
   <header>
     <a href="index.html" class="logo">MEES<span>.IO</span></a>
+
+    <!-- CHECKBOX EN 2-STREEP KNOP -->
     <input type="checkbox" id="menu-toggle">
     <label for="menu-toggle" class="menu-btn" title="Open Menu">
       <span></span>
       <span></span>
     </label>
+
+    <!-- DONKERE ACHTERGROND WANNEER MENU OPEN IS -->
     <label for="menu-toggle" class="overlay"></label>
 
+    <!-- SIDEBAR MENU -->
     <nav class="sidebar">
+      
+      <!-- GTA 6 ONDERWERPEN -->
       <div class="menu-group gta-group">
         <h3>🌴 GTA 6</h3>
         <ul>
           <li><a href="gta6-verhaal.html">Verhaal & Vice City</a></li>
-          <li><a href="gta6-personages.html">Personages (Lucia & Jason)</a></li>
-          <li><a href="gta6-gameplay.html">Gameplay & Voertuigen</a></li>
-          <li><a href="gta6-trailers.html">Trailers & Geruchten</a></li>
         </ul>
       </div>
 
+      <!-- INFORMATICA ONDERWERPEN -->
       <div class="menu-group info-group">
         <h3>💻 Informatica</h3>
         <ul>
           <li><a href="binairstelsel.html">Binair Stelsel</a></li>
           <li><a href="kleurmodellen.html">Kleurmodellen</a></li>
-          <li><a href="drielagenmodel.html">3-Lagenmodel</a></li>
-          <li><a href="cpu.html">CPU (Processor)</a></li>
+          <li><a href="compressie.html">Compressie</a></li>
+          <li><a href="ai.html">AI (Kunstmatige Intelligentie)</a></li>
+          <li><a href="invoer-verwerking-uitvoer.html">Invoer, Verwerking & Uitvoer</a></li>
         </ul>
       </div>
+
     </nav>
   </header>
 
   <main>
+    <!-- HERO SECTIE -->
     <section class="hero">
       <h1>Kleurmodellen</h1>
       <p style="color: #00f0ff; font-weight: bold; margin-bottom: 15px;">
-        [Typ 1 korte zin over kleuren]
+        Hoe schermen en printers kleuren opbouwen: het verschil tussen licht en inkt.
       </p>
       
       <a href="index.html" style="display: inline-block; background: #ff007f; color: #ffffff; padding: 10px 20px; border-radius: 20px; text-decoration: none; font-weight: bold; font-size: 14px; margin-bottom: 20px;">
         ⬅ Terug naar Hoofdpagina
       </a>
 
-      <img src="kleurmodellen.jpg" alt="RGB vs CMYK Afbeelding" class="hero-image" style="margin-bottom: 20px;">
+      <!-- AFBEELDING -->
+      <img src="kleurmodellen.jpg" alt="Kleurmodellen Afbeelding" class="hero-image" style="margin-bottom: 25px;">
 
+      <!-- YOUTUBE VIDEO -->
       <div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 10px; border: 2px solid #00f0ff; box-shadow: 0 0 20px rgba(0, 240, 255, 0.4);">
         <iframe 
-          src="https://www.youtube.com/embed/13X_0a5E39Q" 
-          title="RGB vs CMYK Uitleg" 
+          src="https://www.youtube.com/embed/-b2pAEHEQZc" 
+          title="RGB vs CMYK Kleurmodellen" 
           frameborder="0" 
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
           allowfullscreen
@@ -65,32 +76,37 @@
       </div>
     </section>
 
+    <!-- INFORMATIE SECTIE -->
     <section class="about-box">
       <div class="about-text">
-        <h2>🎨 De Basis</h2>
-        <p>[Typ hier 1 of 2 hele korte zinnen over het verschil tussen schermen en printen]</p>
+        <h2>🎨 Hoe werken kleurmodellen?</h2>
+        <p>
+          Om kleuren op een digitaal scherm of op papier weer te geven, gebruiken we verschillende systemen. 
+          Schermen werken met licht, terwijl printers werken met inkt. Daarom zijn er twee belangrijke hoofdmodellen: 
+          <strong>RGB</strong> en <strong>CMYK</strong>.
+        </p>
 
         <div class="about-details" style="margin-bottom: 25px;">
-          <span class="badge">🖥️ RGB = Schermen</span>
-          <span class="badge">🖨️ CMYK = Drukwerk</span>
-          <span class="badge">🔴🟢🔵 Licht vs Inkt</span>
+          <span class="badge">🖥️ RGB = Schermen (Licht)</span>
+          <span class="badge">🖨️ CMYK = Drukwerk (Inkt)</span>
+          <span class="badge">🔴🟢🔵 Pixel basis</span>
         </div>
 
-        <h2>💻 De Modellen</h2>
+        <h2>💻 De twee belangrijkste modellen</h2>
         <div class="contact-details">
           <div class="contact-item">
             <span class="icon">🖥️</span>
             <div>
-              <strong>RGB (Licht):</strong><br>
-              <span class="contact-val">Rood, Groen, Blauw [Typ 1 kort weetje]</span>
+              <strong>RGB (Rood, Groen, Blauw):</strong><br>
+              <span class="contact-val">Wordt gebruikt voor tv-schermen, telefoons en monitoren. Het mengt gekleurd licht. Als je alle drie de kleuren op maximale sterkte mengt, krijg je wit licht.</span>
             </div>
           </div>
           
           <div class="contact-item">
             <span class="icon">🖨️</span>
             <div>
-              <strong>CMYK (Inkt):</strong><br>
-              <span class="contact-val">Cyaan, Magenta, Yellow, Key (Zwart)</span>
+              <strong>CMYK (Cyan, Magenta, Yellow, Key/Zwart):</strong><br>
+              <span class="contact-val">Wordt gebruikt door printers. Het mengt inkt op papier. Hoe meer inkt je mengt, hoe donkerder het papier wordt.</span>
             </div>
           </div>
         </div>
